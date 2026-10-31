@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>For Jackline ❤️</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<div class="floating-hearts">
+    <span>♥</span>
+    <span>♥</span>
+    <span>♥</span>
+    <span>♥</span>
+    <span>♥</span>
+    <span>♥</span>
+    <span>♥</span>
+</div>
+
+    <div class="container">
+
+        <div class="badge">✨ A SPECIAL DAY FOR YOU ✨</div>
+
+        <div class="heart">♥</div>
+
+        <h1>Happy Birthday</h1>
+
+        <h2>Jackline Makala</h2>
+
+        <p class="intro">
+            Today is not just another day.
+            It's a celebration of someone
+            truly special.
+        </p>
+        <button onclick="startSurprise()">
+    Open Your Surprise ❤️
+</button>
+
+<div class="message" id="message">
+
+    <h3>Dear Jackline, ❤️</h3>
+
+    <p>
+        Today is your special day, and I wish you
+        endless happiness, beautiful memories
+        and countless reasons to smile.
+    </p>
+
+    <p>
+        May every new chapter of your life bring
+        you success, peace and beautiful surprises.
+    </p>
+
+    <h3>Keep Shining, Beautiful Soul ✨</h3>
+
+    <p class="signature">
+        Someone wishes you the very best. ❤️
+    </p>
+
+</div>
+<!-- Secret Message Button -->
+
+<div class="secret-section">
+
+    <button onclick="openSecret()">
+        🤫 Kuna Ujumbe wa Siri Kwa Ajili Yako
+    </button>
+
+    <div class="secret-message" id="secretMessage">
+
+        <div class="secret-heart">💗</div>
+
+        <h2>Ujumbe Kutoka Moyoni ❤️</h2>
+
+        <p>
+            Jackline, kuna watu ambao wanapita
+            kwenye maisha yetu na kuacha alama
+            nzuri ambazo ni vigumu kuzisahau.
+        </p>
+
+        <p>
+            Wakati mwingine tabasamu la mtu mmoja
+            linaweza kufanya siku ya kawaida
+            iwe siku ya kipekee.
+        </p>
+
+        <p>
+            Huenda usijue jinsi ulivyo wa thamani,
+            lakini natamani uendelee kung'aa,
+            kufurahia maisha na kutimiza ndoto zako.
+        </p>
+
+        <p>
+            Nakutakia furaha ambayo haina mwisho,
+            amani moyoni na upendo unaostahili.
+        </p>
+
+        <h3>Usisahau, Wewe Ni Wa Kipekee! ❤️</h3>
+
+        <p class="secret-signature">
+            Kutoka kwa mtu anayekutakia mema... 💌
+        </p>
+
+    </div>
+
+</div>
+<!-- PHOTO GALLERY -->
+
+<div class="gallery-section">
+
+    <h2>📸 Beautiful Memories</h2>
+
+    <p class="gallery-intro">
+        Baadhi ya picha za mtu mwenye tabasamu la kipekee ❤️
+    </p>
+
+    <div class="photo-gallery">
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='images/photo3.jpg') }}"
+                 alt="Jackline Photo 1">
+            <p>Tabasamu la kipekee ❤️</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='images/photo2.jpg') }}"
+                 alt="Jackline Photo 2">
+            <p>Uzuri usioelezeka ✨</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='images/photo1.jpg') }}"
+                 alt="Jackline Photo 3">
+            <p>Endelea kung'aa 💗</p>
+        </div>
+
+    </div>
+
+</div>
+<div class="music-section">
+
+    <div class="music-icon">🎵</div>
+
+    <h2>Muziki Maalumu Kwa Ajili Yako</h2>
+
+    <p>Nyimbo mbili maalumu kwa siku yako, Jackline ❤️</p>
+
+    <h3 id="songTitle">Birthday Piano Instrumental</h3>
+
+    <audio id="birthdayMusic"></audio>
+
+    <div class="music-buttons">
+        <button onclick="previousSong()">⏮ Previous</button>
+        <button id="musicButton" onclick="toggleMusic()">▶ Play</button>
+        <button onclick="nextSong()">Next ⏭</button>
+    </div>
+
+    <div class="volume-control">
+        <span>🔉</span>
+        <input type="range" id="volumeControl"
+               min="0" max="1" step="0.1" value="0.7">
+        <span>🔊</span>
+    </div>
+
+    <p id="musicStatus">Muziki umesimama</p>
+
+</div>
+<!-- Birthday Celebration -->
+
+<div class="celebration-section">
+
+    <h2>🎂 Sasa Ni Wakati Wa Kusherehekea! 🎂</h2>
+
+    <p>Leo ni siku yako maalumu, Jackline! ❤️</p>
+
+    <button onclick="startCelebration()">
+        🎉 Anzisha Sherehe
+    </button>
+
+    <div id="birthdayMessage">
+        <h1>HAPPY BIRTHDAY! 🎂</h1>
+        <h2>Jackline Makala ❤️</h2>
+        <p>
+            Furahia siku yako!
+            Tabasamu, cheka na uendelee kung'aa. ✨
+        </p>
+    </div>
+
+</div>
+
+<div id="confetti-container"></div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <p class="footer">
+            Made with love ❤️
+        </p>
+
+    </div>
+
+</body>
+  </html>
